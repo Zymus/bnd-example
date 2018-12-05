@@ -1,0 +1,19 @@
+javac.source: 1.8
+javac.target: 1.8
+
+Bundle-Version: 0.0.0+${tstamp}
+
+-buildpath: \
+	osgi.annotation; version="[6.0, 7.0)",\
+	osgi.cmpn; version="[6.0, 7.0)",\
+	${jetbrains-annotations},\
+	${kotlin}
+
+-testpath: \
+	${junit}
+
+Import-Package: \
+	kotlin.*; version="[1.3, 2.0)"
+
+Export-Package: \
+	hummingbird.species.config
